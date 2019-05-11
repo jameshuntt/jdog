@@ -1,11 +1,36 @@
 import React, { Component } from 'react'
+import AboutAlbany from './AboutAlbany'
+import AboutAtlanta from './AboutAtlanta'
+import AboutSavannah from './AboutSavannah'
+import location from './location'
 
-export default class About extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+
+  switch(location){
+    case 0:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutAlbany />
+          );
+        }
+      }
+      break;
+    case 1:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutAtlanta />
+          )
+        }
+      }
+      break;
+    case 2:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutSavannah />
+          )
+        }
+      }
+      break;
 }

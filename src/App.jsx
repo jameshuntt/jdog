@@ -1,30 +1,29 @@
 import React from 'react'
-import logo from './components/assets/jdogimage.png'
 import './App.css'
+import { BrowserRouter as Route, Switch, Redirect } from 'react-router-dom'
 import Nvbr from './components/CustomNavbar'
-import SwitchLocation from './components/SwitchLocation'
-import ContactAlbany from './components/ContactAlbany'
+import Home from './components/Home'
+import InTheCommunity from './components/InTheCommunity'
+import Services from './components/Services'
+import ContactUs from './ContactUs'
+import About from './components/About'
+import GetInvolved from './components/GetInvolved'
 
 function App() {
   return (
     <div className="App">
       <Nvbr />
-      <SwitchLocation />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <ContactAlbany />
+      <Redirect from="/" to="/Home"/>
+      <Switch>
+        <Route exact path="/Home" component={Home} />
+        <Route path="/InTheCommunity" component={InTheCommunity} />
+        <Route path="/Services" component={Services} />
+        <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/WhoAreWe?" component={About} />
+        <Route path="/GetInvolved" component={GetInvolved} />
+      </Switch>
+      <Home />
+
     </div>
   );
 }

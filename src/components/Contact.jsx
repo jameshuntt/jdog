@@ -3,6 +3,35 @@ import ContactSavannah from './ContactSavannah'
 import ContactAtlanta from './ContactAtlanta'
 import ContactAlbany from './ContactAlbany'
 
+switch(location){
+    case 0:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutAlbany />
+          );
+        }
+      }
+      break;
+    case 1:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutAtlanta />
+          )
+        }
+      }
+      break;
+    case 2:
+      export default class About extends Component {
+        render(){
+          return (
+            <AboutSavannah />
+          )
+        }
+      }
+      break;
+}
 export default class Contact extends Component {
     
     state = {
