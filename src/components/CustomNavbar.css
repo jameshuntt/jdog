@@ -3,7 +3,7 @@
 }
 .button{
     color: red;
-    
+    box-shadow:none;
     border: none;
 
 }

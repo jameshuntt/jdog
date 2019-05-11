@@ -32,7 +32,7 @@ class Location extends Component {
     return (
       <div>
         <button className="button" onClick={this.showMenu}>
-          Location Selector
+          Location Selector &#x25BE;
         </button>
 
         {
