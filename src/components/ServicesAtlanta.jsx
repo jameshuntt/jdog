@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class ContactSavannah extends Component {
+export default class ServicesAtlanta extends Component {
   render() {
     return (
       <div>

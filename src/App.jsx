@@ -3,6 +3,7 @@ import logo from './components/assets/jdogimage.png'
 import './App.css'
 import Nvbr from './components/CustomNavbar'
 import SwitchLocation from './components/SwitchLocation'
+import ContactAlbany from './components/ContactAlbany'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ContactAlbany />
     </div>
   );
 }
