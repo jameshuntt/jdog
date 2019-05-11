@@ -1,3 +1,15 @@
 .bologna{
     height: 30px;
 }
+.button{
+    color: red;
+    
+    border: none;
+
+}
+.button:hover{
+    color: red;
+    background-color:none;
+    
+    border: none;
+}

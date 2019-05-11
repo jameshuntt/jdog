@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown,Dropdown } from 'react-bootstrap'
 import logo from './assets/jdogimage.png'
 import logo2 from './assets/jdogwords.png'
+import Location from './SwitchLocation'
 import './CustomNavbar.css'
 
 class Nvbr extends Component {
@@ -33,6 +34,18 @@ class Nvbr extends Component {
                         </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
+                    <Dropdown className="button">
+                        <Dropdown.Toggle className="button">
+                            Location Selector
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Albany</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Savannah</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Atlanta</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Location className="button"/>
                 </Navbar>
             </div>
         )

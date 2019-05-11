@@ -2,13 +2,13 @@ import React from 'react'
 import logo from './components/assets/jdogimage.png'
 import './App.css'
 import Nvbr from './components/CustomNavbar'
-import SwitchLocation from './components/SwitchLocation'
+
 
 function App() {
   return (
     <div className="App">
       <Nvbr />
-      <SwitchLocation />
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +21,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          Chase Was Here Bitch
         </a>
       </header>
     </div>
